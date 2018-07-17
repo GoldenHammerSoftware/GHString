@@ -2,7 +2,7 @@
 #include "GHNumberListParser.h"
 #include "GHString/GHStringTokenizer.h"
 
-void GHNumberListParser::parseFloatList(const char* string, float* dest, unsigned int numFloats) const
+void GHNumberListParser::parseFloatList(const char* string, float* dest, unsigned int numFloats) 
 {
 	GHStringTokenizer strTok;
 	for (unsigned int i = 0; i < numFloats; ++i) {
@@ -10,7 +10,7 @@ void GHNumberListParser::parseFloatList(const char* string, float* dest, unsigne
 	}
 }
 
-void GHNumberListParser::parseIntList(const char* string, int* dest, unsigned int numInts) const
+void GHNumberListParser::parseIntList(const char* string, int* dest, unsigned int numInts) 
 {
 	GHStringTokenizer strTok;
 	for (unsigned int i = 0; i < numInts; ++i) {
@@ -19,7 +19,7 @@ void GHNumberListParser::parseIntList(const char* string, int* dest, unsigned in
 }
 
 void GHNumberListParser::parseFloatRect(const char* string, float* ul, float* br, 
-                                        unsigned int numFloatsPerCorner) const
+                                        unsigned int numFloatsPerCorner) 
 {
 	GHStringTokenizer strTok;
 	for (unsigned int i = 0; i < numFloatsPerCorner; ++i)
@@ -32,7 +32,7 @@ void GHNumberListParser::parseFloatRect(const char* string, float* ul, float* br
 	}
 }
 
-void GHNumberListParser::parseIntVector(const char* string, std::vector<int>& dest) const
+void GHNumberListParser::parseIntVector(const char* string, std::vector<int>& dest) 
 {
 	GHStringTokenizer strTok;
 	while (string && *string != '\0')
@@ -42,7 +42,7 @@ void GHNumberListParser::parseIntVector(const char* string, std::vector<int>& de
 	}
 }
 
-void GHNumberListParser::parseFloatVector(const char* string, std::vector<float>& dest) const
+void GHNumberListParser::parseFloatVector(const char* string, std::vector<float>& dest) 
 {
 	GHStringTokenizer strTok;
 	while (string && *string != '\0')

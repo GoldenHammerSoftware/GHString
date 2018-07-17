@@ -3,6 +3,7 @@
 
 #include "GHString/GHIdentifier.h"
 
+// Interface for converting char*s to GHIdentifiers.
 class GHStringHashTable
 {
 public:

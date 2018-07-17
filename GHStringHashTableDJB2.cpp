@@ -6,7 +6,7 @@ GHIdentifier GHStringHashTableDJB2::generateHash(const char* str, int len) const
 {
     if (!str) return GHIdentifier(0);
     
-	// algorithm taken from http://www.cse.yorku.ca/~oz/hash.html
+	// algorithm from http://www.cse.yorku.ca/~oz/hash.html
 	unsigned long hash = 5381;
 	int c;
     const char* dummyStr = str;

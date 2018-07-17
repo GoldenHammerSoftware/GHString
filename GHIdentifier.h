@@ -10,6 +10,7 @@
     #endif
 #endif
 
+// An efficient comparison-only identifier.
 class GHIdentifier
 {
 public:

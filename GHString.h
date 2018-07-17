@@ -2,6 +2,7 @@
 
 #include <stdlib.h>
 
+// A convenience and safety wrapper for char*s.
 class GHString
 {
 public:

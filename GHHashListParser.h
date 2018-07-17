@@ -7,12 +7,11 @@
 
 class GHStringHashTable;
 
-// utility class for turning a space separated list into a vector of string hashes
-class GHHashListParser
+// Utility for turning a space separated list into a vector of string hashes
+namespace GHHashListParser
 {
-public:
-    static void parseHashList(const char* str, const GHStringHashTable& hashTable,
-                              std::vector<GHIdentifier>& ret);
-    static void parseHashEnumList(const char* str, const GHIdentifierMap<int>& enumStore,
-                                  std::vector<int>& ret);
-};
+    void parseHashList(const char* str, const GHStringHashTable& hashTable, 
+		std::vector<GHIdentifier>& ret);
+    void parseHashEnumList(const char* str, const GHIdentifierMap<int>& enumStore, 
+		std::vector<int>& ret);
+}

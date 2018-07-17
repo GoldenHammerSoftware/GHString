@@ -3,7 +3,7 @@
 
 #include <string.h>
 
-// struct for safely using char*'s in stl structs.
+// Struct for safely using char*'s in stl structs.
 struct GHCharLess
 {
 public:

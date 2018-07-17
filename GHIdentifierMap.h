@@ -6,8 +6,8 @@
 #include <map>
 #include <stddef.h> //for size_t
 
-// A place to store out a map of ghidentifier to value.
-//  used for looking stuff up from file.
+// A place to store out a map of GHIdentifier to value.
+// Adds convenience methods for looking up by GHIdentifier or char*
 template< typename T >
 class GHIdentifierMap
 {
@@ -21,6 +21,7 @@ public:
 	{
 		mMap.insert(std::pair<GHIdentifier, T>(id, val));
 	}
+
 	const T* find(GHIdentifier id) const
 	{
 		size_t debugSize = mMap.size();

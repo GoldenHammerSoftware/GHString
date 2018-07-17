@@ -3,8 +3,8 @@
 
 #include "GHString/GHStringHashTable.h"
 
-// simple implementation of the DJB2 hashing algorithm
-// currently does not handle collisions
+// Simple implementation of the DJB2 hashing algorithm
+// Currently does not handle collisions
 class GHStringHashTableDJB2 : public GHStringHashTable
 {
 public:
