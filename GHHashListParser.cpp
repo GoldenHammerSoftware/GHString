@@ -1,4 +1,4 @@
-// Copyright 2010 Golden Hammer Software
+// Copyright 2018 Golden Hammer Software.
 #include "GHHashListParser.h"
 #include "GHString/GHStringTokenizer.h"
 #include "GHString/GHStringHashTable.h"

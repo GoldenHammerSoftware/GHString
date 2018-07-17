@@ -1,4 +1,4 @@
-// Copyright 2010 Golden Hammer Software
+// Copyright 2018 Golden Hammer Software.
 #include "GHString/GHStringTokenizer.h"
 #include <memory.h>
 #include <string.h>
@@ -55,7 +55,7 @@ bool GHStringTokenizer::popToken(const char* buffer, const char* markers, const 
 		return false;
 	
 	// find the first instance of the marker char within the buffer that isn't within quotes.
-	size_t len = (int)::strlen(buffer);
+	int len = (int)::strlen(buffer);
 	// bool to say we should exit our while loop.
 	bool foundToken = false;
 	// bool to say we found a quote, and need to find the next quote before continuing.
