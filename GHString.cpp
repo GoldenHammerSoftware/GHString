@@ -7,40 +7,16 @@
 
 GHString::GHString(void)
 {
-	init();
 }
 
 GHString::GHString(const GHString& rhs)
 {
-	init();
 	*this = rhs;
-}
-
-GHString& GHString::operator=(const GHString& rhs)
-{
-    if (rhs.mConstChars)
-	{
-		setConstChars(rhs.mConstChars, rhs.mOwnsChars ? CHT_COPY : CHT_REFERENCE);
-	}
-	else
-	{
-		setChars(rhs.mChars, rhs.mOwnsChars ? CHT_COPY : CHT_REFERENCE);
-	}
-    return *this;
 }
 
 GHString::GHString(const char* text, CharHandlingType type)
 {
-	init();
 	setConstChars(text, type);
-}
-
-void GHString::init(void)
-{
-	mChars = 0;
-	mConstChars = 0;
-	mCharLen = 0;
-	mOwnsChars = false;
 }
 
 GHString::~GHString(void)
@@ -49,6 +25,19 @@ GHString::~GHString(void)
         delete [] mChars;
         mChars = 0;
     }
+}
+
+GHString& GHString::operator=(const GHString& rhs)
+{
+	if (rhs.mConstChars)
+	{
+		setConstChars(rhs.mConstChars, rhs.mOwnsChars ? CHT_COPY : CHT_REFERENCE);
+	}
+	else
+	{
+		setChars(rhs.mChars, rhs.mOwnsChars ? CHT_COPY : CHT_REFERENCE);
+	}
+	return *this;
 }
 
 const char* GHString::getChars(void) const

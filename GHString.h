@@ -45,12 +45,11 @@ public:
 
 private:
 	void clearNonConstChars(void);
-	void init(void);
 
 private:
 	/// A string is expected to have either const chars or chars but not both.
-	const char* mConstChars;
-	char* mChars;
-	bool mOwnsChars;
-	size_t mCharLen;
+	const char* mConstChars{ 0 };
+	char* mChars{ 0 };
+	bool mOwnsChars{ false };
+	size_t mCharLen{ 0 };
 };
