@@ -8,7 +8,7 @@ A cross platform string utility library for C++.
 
 ## GHString
 
-GHString is a safety and convenience wrapper for char* and const char*.  They can be created using a CharHandlingType to specify how it is used.  
+GHString is a safety and convenience wrapper for char* and const char*.  They can be created using a CharHandlingType to specify how the memory is managed.  
 * CHT_REFERENCE will do no memory copying or deletion.  
 * CHT_CLAIM will do no memory copying but will make the GHString take responsibility for deletion.  
 * CHT_COPY will make a copy of the input and be responsible for deletion.
