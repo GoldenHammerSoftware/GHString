@@ -23,6 +23,7 @@ public:
 
 	void setConstChars(const char* chars, CharHandlingType type);
 	void setChars(char* chars, CharHandlingType type);
+
 	// become a truncation of chars.  if char length > maxLen then add "..." at the end.
 	void truncateChars(const char* chars, size_t maxLen);
     
@@ -30,6 +31,7 @@ public:
 
 	const char* getChars(void) const;
     char* getNonConstChars(void);
+	
 	size_t getCharLen(void) const { if (!mChars && !mConstChars) return 0; return mCharLen; }
     // return true if string is 0 or ""
     bool isEmpty(void) const;
