@@ -4,6 +4,8 @@
 #include <stdlib.h>
 
 // A convenience and safety wrapper for char*s.
+// A GHString can be created with a const char* or a char*.
+// The CharHandlingType is used to manage whether we make a copy and whether we delete the memory.
 class GHString
 {
 public:
