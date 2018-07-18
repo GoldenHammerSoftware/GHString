@@ -2,8 +2,8 @@
 #pragma once
 
 #include <vector>
-#include "GHString/GHIdentifier.h"
-#include "GHString/GHIdentifierMap.h"
+#include "GHIdentifier.h"
+#include "GHIdentifierMap.h"
 
 class GHStringHashTable;
 

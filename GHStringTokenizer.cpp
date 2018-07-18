@@ -1,5 +1,5 @@
 // Copyright 2018 Golden Hammer Software.
-#include "GHString/GHStringTokenizer.h"
+#include "GHStringTokenizer.h"
 #include <memory.h>
 #include <string.h>
 #include <stdlib.h>

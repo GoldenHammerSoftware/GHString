@@ -1,7 +1,7 @@
 // Copyright 2018 Golden Hammer Software.
 #pragma once
 
-#include "GHString/GHStringHashTable.h"
+#include "GHStringHashTable.h"
 
 // Simple implementation of the DJB2 hashing algorithm
 // Currently does not handle collisions

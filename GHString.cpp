@@ -1,5 +1,5 @@
 // Copyright 2018 Golden Hammer Software.
-#include "GHString/GHString.h"
+#include "GHString.h"
 #include "GHCharLess.h"
 #include "assert.h"
 #include <stdarg.h>

@@ -1,8 +1,8 @@
 // Copyright 2018 Golden Hammer Software.
 #pragma once
 
-#include "GHString/GHIdentifier.h"
-#include "GHString/GHStringHashTable.h"
+#include "GHIdentifier.h"
+#include "GHStringHashTable.h"
 #include <map>
 #include <stddef.h> //for size_t
 

@@ -21,12 +21,14 @@ public:
 	GHString(const char* text, CharHandlingType type=CHT_REFERENCE);
 	~GHString(void);
 
+	// Set our const chars and handling type.  Non-const chars will be deleted if present.
 	void setConstChars(const char* chars, CharHandlingType type);
+	// Set our non-const chars and handling type.  Const chars will be set to 0.
 	void setChars(char* chars, CharHandlingType type);
 
-	// become a truncation of chars.  if char length > maxLen then add "..." at the end.
+	// Become a truncation of chars.  if char length > maxLen then add "..." at the end.
 	void truncateChars(const char* chars, size_t maxLen);
-    
+    // Become a printf-style formatting of an input string and arguments.
     void format(const char* str, ...);
 
 	const char* getChars(void) const;

@@ -1,7 +1,7 @@
 // Copyright 2018 Golden Hammer Software.
 #pragma once
 
-#include "GHString/GHIdentifier.h"
+#include "GHIdentifier.h"
 
 // Interface for converting char*s to GHIdentifiers.
 class GHStringHashTable

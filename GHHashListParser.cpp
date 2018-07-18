@@ -1,7 +1,7 @@
 // Copyright 2018 Golden Hammer Software.
 #include "GHHashListParser.h"
-#include "GHString/GHStringTokenizer.h"
-#include "GHString/GHStringHashTable.h"
+#include "GHStringTokenizer.h"
+#include "GHStringHashTable.h"
 
 void GHHashListParser::parseHashList(const char* str, const GHStringHashTable& hashTable,
                                      std::vector<GHIdentifier>& ret)

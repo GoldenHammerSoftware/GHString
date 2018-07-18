@@ -1,5 +1,5 @@
 // Copyright 2018 Golden Hammer Software.
-#include "GHString/GHWhitespaceUtil.h"
+#include "GHWhitespaceUtil.h"
 #include <cassert>
 
 bool GHWhitespaceUtil::isWhitespace(char value)

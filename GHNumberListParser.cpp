@@ -1,6 +1,6 @@
 // Copyright 2018 Golden Hammer Software.
 #include "GHNumberListParser.h"
-#include "GHString/GHStringTokenizer.h"
+#include "GHStringTokenizer.h"
 
 void GHNumberListParser::parseFloatList(const char* string, float* dest, unsigned int numFloats) 
 {
