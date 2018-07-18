@@ -1,4 +1,4 @@
-#GHString
+# GHString
 
 A cross platform string utility library for C++.
 
