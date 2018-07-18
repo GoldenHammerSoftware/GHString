@@ -20,3 +20,11 @@ GHIdentifier is a hashed string that can be used as an efficient lookup key.  It
 ## GHStringTokenizer
 
 GHStringTokenizer is a utility for breaking up a string into tokens using arbitrary delineators.
+
+## GHNumberListParser
+
+GHNumberListParser is a utility for reading in a list of numbers from a string buffer.  For example turning "5 1 19 5" into an array of 4 ints.
+
+## GHHashListParser
+
+GHHashListParser is a utility for reading in a list of strings and turning them into GHIdentifiers.
