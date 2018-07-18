@@ -15,7 +15,7 @@ GHString is a safety and convenience wrapper for char* and const char*.  They ca
 
 ## GHIdentifier
 
-GHIdentifier is a hashed string that can be used as an efficient lookup key.  It is generated through the GHStringHashTable interface.  GHStringHashTableDJB2 is provided as one implementation.
+GHIdentifier is a hashed string that can be used as an efficient lookup key.  It is generated through the GHStringHashTable interface.  GHStringHashTableDJB2 is provided as one implementation.  Define GHRETAIL to remove debug string representations from the memory.
 
 ## GHStringTokenizer
 
