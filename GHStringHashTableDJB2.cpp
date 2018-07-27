@@ -2,7 +2,7 @@
 #include "GHStringHashTableDJB2.h"
 #include <ctype.h>
 
-GHIdentifier GHStringHashTableDJB2::generateHash(const char* str, int len) const 
+GHIdentifier GHStringHashTableDJB2::generateHash(const char* str, size_t len) const
 {
     if (!str) return GHIdentifier(0);
     
@@ -10,8 +10,8 @@ GHIdentifier GHStringHashTableDJB2::generateHash(const char* str, int len) const
 	unsigned long hash = 5381;
 	int c;
     const char* dummyStr = str;
-    int numChars = 0;
-	while ((c = *dummyStr++) && (len==0 || numChars<len))
+    size_t numChars = 0;
+	while ((c = *dummyStr++) && (len == 0 || numChars < len))
 	{
 		hash = ((hash << 5) + hash) + tolower(c); /* hash * 33 + c */
         numChars++;

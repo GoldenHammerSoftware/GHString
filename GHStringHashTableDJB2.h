@@ -8,5 +8,5 @@
 class GHStringHashTableDJB2 : public GHStringHashTable
 {
 public:
-	virtual GHIdentifier generateHash(const char* str, int len=0) const;
+	virtual GHIdentifier generateHash(const char* str, size_t len=0) const;
 };
