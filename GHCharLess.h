@@ -23,7 +23,7 @@ public:
 		if (len2 < minLen) minLen = len2;
 
 		// compare characters up to min len looking for differences.
-		for (int i = 0; i < minLen; ++i)
+		for (size_t i = 0; i < minLen; ++i)
 		{
 			if (str1[i] != str2[i]) {
 				return str1[i] < str2[i];

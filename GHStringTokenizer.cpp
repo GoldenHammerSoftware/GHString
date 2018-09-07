@@ -80,13 +80,13 @@ bool GHStringTokenizer::popToken(const char* buffer, const char* markers, const 
 			}
 			// we found a potential token, so set out pointer.
 			tokenMarker = markerSearch;
-			size_t markerLen = (int)(markerSearch - searchbuffer);
+			int markerLen = (int)(markerSearch - searchbuffer);
 			
 			// find the first instance of '"' for comparison.
 			const char* quotePtr = ::strchr(searchbuffer, (int)'"');
 			if (quotePtr) {
 				// see if the quote or the marker comes first.
-				size_t quoteLen = (int)(quotePtr - searchbuffer);
+				int quoteLen = (int)(quotePtr - searchbuffer);
 				if (quoteLen >= markerLen) {
 					// the token comes first, so use it.
 					foundToken = true;
@@ -110,7 +110,7 @@ bool GHStringTokenizer::popToken(const char* buffer, const char* markers, const 
 			const char* quotePtr = ::strchr(searchbuffer, (int)'"');
 			if (quotePtr) {
 				// see if the quote or the marker comes first.
-				size_t  quoteLen = (int)(quotePtr - buffer);
+				int quoteLen = (int)(quotePtr - buffer);
 				if (quoteLen > len) {
 					// we hit an open quote without an end quote.
 					return false;
