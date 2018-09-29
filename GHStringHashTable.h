@@ -2,6 +2,7 @@
 #pragma once
 
 #include "GHIdentifier.h"
+#include <stddef.h> // for size_t
 
 // Interface for converting char*s to GHIdentifiers.
 class GHStringHashTable
