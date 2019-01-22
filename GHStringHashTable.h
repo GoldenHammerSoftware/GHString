@@ -4,6 +4,7 @@
 #include "GHIdentifier.h"
 
 // Interface for converting char*s to GHIdentifiers.
+// TODO: rename to GHStringHashGenerator, it's not a table.
 class GHStringHashTable
 {
 public:
