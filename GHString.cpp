@@ -182,7 +182,7 @@ void GHString::truncateChars(const char* chars, size_t maxLen)
 	mConstChars = 0;
 
 	char* truncStr = new char[maxLen + 1];
-	memset(truncStr, (int)maxLen + 1, 0);
+	memset(truncStr, 0, (int)maxLen + 1);
 	::snprintf(truncStr, maxLen, "%s", chars);
 	assert(maxLen > 3);
 	if (truncStr[maxLen] != 0) {
