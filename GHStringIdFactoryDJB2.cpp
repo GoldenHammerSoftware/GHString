@@ -1,8 +1,8 @@
 // Copyright 2018 Golden Hammer Software.
-#include "GHStringHashTableDJB2.h"
+#include "GHStringIdFactoryDJB2.h"
 #include <ctype.h>
 
-GHIdentifier GHStringHashTableDJB2::generateHash(const char* str, size_t len) const
+GHIdentifier GHStringIdFactoryDJB2::generateHash(const char* str, size_t len) const
 {
     if (!str) return GHIdentifier(0);
     

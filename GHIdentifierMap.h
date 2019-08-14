@@ -2,7 +2,7 @@
 #pragma once
 
 #include "GHIdentifier.h"
-#include "GHStringHashTable.h"
+#include "GHStringIdFactory.h"
 #include <map>
 #include <stddef.h> //for size_t
 
@@ -12,7 +12,7 @@ template< typename T >
 class GHIdentifierMap
 {
 public:
-	GHIdentifierMap(const GHStringHashTable& hashTable)
+	GHIdentifierMap(const GHStringIdFactory& hashTable)
 	: mHashTable(hashTable)
 	{
 	}
@@ -44,9 +44,9 @@ public:
 		return find(mHashTable.generateHash(str));
 	}
 
-	const GHStringHashTable& getHashTable(void) const {return mHashTable;}
+	const GHStringIdFactory& getHashTable(void) const {return mHashTable;}
 
 private:
-	const GHStringHashTable& mHashTable;
+	const GHStringIdFactory& mHashTable;
 	std::map<GHIdentifier, T> mMap;
 };

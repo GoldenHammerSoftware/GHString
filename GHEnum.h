@@ -1,7 +1,7 @@
 // Copyright 2010 Golden Hammer Software
 
 #include "GHString/GHIdentifierMap.h"
-#include "GHString/GHStringHashTable.h"
+#include "GHString/GHStringIdFactory.h"
 
 #undef GHENUMBEGIN
 #undef GHENUMEND
@@ -31,7 +31,7 @@
 #endif
 
 #ifdef GHPUTSTRINGSINTABLES
-    #define GHIDENTIFIERBEGIN(x) namespace x { void generateIdentifiers(const GHStringHashTable& hashTable) {
+    #define GHIDENTIFIERBEGIN(x) namespace x { void generateIdentifiers(const GHStringIdFactory& hashTable) {
     #define GHIDENTIFIEREND } }
     #define GHIDENTIFIER(x) x = hashTable.generateHash(#x);
 #else
@@ -40,7 +40,7 @@
     #define GHIDENTIFIEREND }
     #define GHIDENTIFIER(x) GHIdentifier x;
 #else
-    #define GHIDENTIFIERBEGIN(x) namespace x { void generateIdentifiers(const GHStringHashTable& hashTable);
+    #define GHIDENTIFIERBEGIN(x) namespace x { void generateIdentifiers(const GHStringIdFactory& hashTable);
     #define GHIDENTIFIEREND }
     #define GHIDENTIFIER(x) extern GHIdentifier x;
 #endif

@@ -1,9 +1,9 @@
 // Copyright 2018 Golden Hammer Software.
 #include "GHHashListParser.h"
 #include "GHStringTokenizer.h"
-#include "GHStringHashTable.h"
+#include "GHStringIdFactory.h"
 
-void GHHashListParser::parseHashList(const char* str, const GHStringHashTable& hashTable,
+void GHHashListParser::parseHashList(const char* str, const GHStringIdFactory& hashTable,
                                      std::vector<GHIdentifier>& ret)
 {
     GHStringTokenizer strTok;
