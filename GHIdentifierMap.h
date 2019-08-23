@@ -13,7 +13,7 @@ class GHIdentifierMap
 {
 public:
 	GHIdentifierMap(const GHStringIdFactory& hashTable)
-	: mHashTable(hashTable)
+	: mIdFactory(hashTable)
 	{
 	}
 
@@ -37,16 +37,16 @@ public:
 
 	void add(const char* str, const T& val)
 	{
-		add(mHashTable.generateHash(str), val);
+		add(mIdFactory.generateHash(str), val);
 	}
 	const T* find(const char* str) const
 	{
-		return find(mHashTable.generateHash(str));
+		return find(mIdFactory.generateHash(str));
 	}
 
-	const GHStringIdFactory& getHashTable(void) const {return mHashTable;}
+	const GHStringIdFactory& getHashTable(void) const {return mIdFactory;}
 
 private:
-	const GHStringIdFactory& mHashTable;
+	const GHStringIdFactory& mIdFactory;
 	std::map<GHIdentifier, T> mMap;
 };
