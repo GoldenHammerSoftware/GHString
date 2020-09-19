@@ -1,4 +1,4 @@
-// Copyright 2010 Golden Hammer Software
+// Copyright Golden Hammer Software
 
 // This is the file you include in a project cpp to create the strings for an enum
 // before including this file, #define ENUMHEADER "headerfilename.h"

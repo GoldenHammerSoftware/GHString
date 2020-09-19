@@ -1,4 +1,4 @@
-// Copyright 2018 Golden Hammer Software.
+// Copyright Golden Hammer Software
 #include "GHStringTokenizer.h"
 #include <memory.h>
 #include <string.h>

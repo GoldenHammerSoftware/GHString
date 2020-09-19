@@ -1,4 +1,4 @@
-// Copyright 2018 Golden Hammer Software.
+// Copyright Golden Hammer Software
 #include "GHStringIdFactoryDJB2.h"
 #include <ctype.h>
 

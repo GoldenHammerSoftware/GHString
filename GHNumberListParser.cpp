@@ -1,4 +1,4 @@
-// Copyright 2018 Golden Hammer Software.
+// Copyright Golden Hammer Software
 #include "GHNumberListParser.h"
 #include "GHStringTokenizer.h"
 

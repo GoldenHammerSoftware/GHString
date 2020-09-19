@@ -1,4 +1,4 @@
-// Copyright 2018 Golden Hammer Software.
+// Copyright Golden Hammer Software
 #pragma once
 
 // A class to break up strings into token separated lists for parsing.

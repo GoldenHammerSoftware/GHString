@@ -1,4 +1,4 @@
-// Copyright 2018 Golden Hammer Software.
+// Copyright Golden Hammer Software
 #include "GHString.h"
 #include "GHCharLess.h"
 #include "assert.h"
