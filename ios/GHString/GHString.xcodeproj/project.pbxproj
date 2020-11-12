@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		95F0F22D231D63ED0097CC1C /* GHNumberListParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F0F217231D63EC0097CC1C /* GHNumberListParser.cpp */; };
-		95F0F22E231D63ED0097CC1C /* GHStringTokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F0F21C231D63EC0097CC1C /* GHStringTokenizer.cpp */; };
-		95F0F22F231D63ED0097CC1C /* GHWhitespaceUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F0F21E231D63EC0097CC1C /* GHWhitespaceUtil.cpp */; };
-		95F0F230231D63ED0097CC1C /* GHFilenameUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F0F223231D63ED0097CC1C /* GHFilenameUtil.cpp */; };
-		95F0F231231D63ED0097CC1C /* GHStringIdFactoryDJB2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F0F229231D63ED0097CC1C /* GHStringIdFactoryDJB2.cpp */; };
-		95F0F232231D63EE0097CC1C /* GHHashListParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F0F22A231D63ED0097CC1C /* GHHashListParser.cpp */; };
-		95F0F233231D63EE0097CC1C /* GHString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F0F22B231D63ED0097CC1C /* GHString.cpp */; };
+		0ADC7FA7255DB2F900F6F683 /* GHFilenameUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC7F96255DB2F800F6F683 /* GHFilenameUtil.cpp */; };
+		0ADC7FA8255DB2F900F6F683 /* GHHashListParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC7F97255DB2F800F6F683 /* GHHashListParser.cpp */; };
+		0ADC7FA9255DB2F900F6F683 /* GHWhitespaceUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC7F9C255DB2F800F6F683 /* GHWhitespaceUtil.cpp */; };
+		0ADC7FAA255DB2F900F6F683 /* GHStringTokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC7F9E255DB2F800F6F683 /* GHStringTokenizer.cpp */; };
+		0ADC7FAB255DB2F900F6F683 /* GHStringIdFactoryDJB2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC7FA2255DB2F800F6F683 /* GHStringIdFactoryDJB2.cpp */; };
+		0ADC7FAC255DB2F900F6F683 /* GHString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC7FA5255DB2F800F6F683 /* GHString.cpp */; };
+		0ADC7FAD255DB2F900F6F683 /* GHNumberListParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC7FA6255DB2F900F6F683 /* GHNumberListParser.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,30 +29,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0ADC7F92255DB2F800F6F683 /* GHCharLess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCharLess.h; sourceTree = "<group>"; };
+		0ADC7F93255DB2F800F6F683 /* GHEnumEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHEnumEnd.h; sourceTree = "<group>"; };
+		0ADC7F94255DB2F800F6F683 /* GHString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHString.h; sourceTree = "<group>"; };
+		0ADC7F95255DB2F800F6F683 /* GHWhitespaceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWhitespaceUtil.h; sourceTree = "<group>"; };
+		0ADC7F96255DB2F800F6F683 /* GHFilenameUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GHFilenameUtil.cpp; sourceTree = "<group>"; };
+		0ADC7F97255DB2F800F6F683 /* GHHashListParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GHHashListParser.cpp; sourceTree = "<group>"; };
+		0ADC7F98255DB2F800F6F683 /* GHStringIdFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHStringIdFactory.h; sourceTree = "<group>"; };
+		0ADC7F99255DB2F800F6F683 /* GHStringIdFactoryDJB2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHStringIdFactoryDJB2.h; sourceTree = "<group>"; };
+		0ADC7F9A255DB2F800F6F683 /* GHIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHIdentifier.h; sourceTree = "<group>"; };
+		0ADC7F9B255DB2F800F6F683 /* GHFilenameUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHFilenameUtil.h; sourceTree = "<group>"; };
+		0ADC7F9C255DB2F800F6F683 /* GHWhitespaceUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GHWhitespaceUtil.cpp; sourceTree = "<group>"; };
+		0ADC7F9D255DB2F800F6F683 /* GHHashListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHHashListParser.h; sourceTree = "<group>"; };
+		0ADC7F9E255DB2F800F6F683 /* GHStringTokenizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GHStringTokenizer.cpp; sourceTree = "<group>"; };
+		0ADC7F9F255DB2F800F6F683 /* GHEnumInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHEnumInclude.h; sourceTree = "<group>"; };
+		0ADC7FA0255DB2F800F6F683 /* GHNumberListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHNumberListParser.h; sourceTree = "<group>"; };
+		0ADC7FA1255DB2F800F6F683 /* GHEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHEnum.h; sourceTree = "<group>"; };
+		0ADC7FA2255DB2F800F6F683 /* GHStringIdFactoryDJB2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GHStringIdFactoryDJB2.cpp; sourceTree = "<group>"; };
+		0ADC7FA3255DB2F800F6F683 /* GHStringTokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHStringTokenizer.h; sourceTree = "<group>"; };
+		0ADC7FA4255DB2F800F6F683 /* GHIdentifierMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHIdentifierMap.h; sourceTree = "<group>"; };
+		0ADC7FA5255DB2F800F6F683 /* GHString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GHString.cpp; sourceTree = "<group>"; };
+		0ADC7FA6255DB2F900F6F683 /* GHNumberListParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GHNumberListParser.cpp; sourceTree = "<group>"; };
 		95F0F20A231D63990097CC1C /* libGHString.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGHString.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		95F0F216231D63EC0097CC1C /* GHIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHIdentifier.h; path = ../../../GHIdentifier.h; sourceTree = "<group>"; };
-		95F0F217231D63EC0097CC1C /* GHNumberListParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GHNumberListParser.cpp; path = ../../../GHNumberListParser.cpp; sourceTree = "<group>"; };
-		95F0F218231D63EC0097CC1C /* GHHashListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHHashListParser.h; path = ../../../GHHashListParser.h; sourceTree = "<group>"; };
-		95F0F219231D63EC0097CC1C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
-		95F0F21A231D63EC0097CC1C /* GHNumberListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHNumberListParser.h; path = ../../../GHNumberListParser.h; sourceTree = "<group>"; };
-		95F0F21B231D63EC0097CC1C /* GHEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHEnum.h; path = ../../../GHEnum.h; sourceTree = "<group>"; };
-		95F0F21C231D63EC0097CC1C /* GHStringTokenizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GHStringTokenizer.cpp; path = ../../../GHStringTokenizer.cpp; sourceTree = "<group>"; };
-		95F0F21D231D63EC0097CC1C /* GHStringTokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHStringTokenizer.h; path = ../../../GHStringTokenizer.h; sourceTree = "<group>"; };
-		95F0F21E231D63EC0097CC1C /* GHWhitespaceUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GHWhitespaceUtil.cpp; path = ../../../GHWhitespaceUtil.cpp; sourceTree = "<group>"; };
-		95F0F21F231D63EC0097CC1C /* GHStringIdFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHStringIdFactory.h; path = ../../../GHStringIdFactory.h; sourceTree = "<group>"; };
-		95F0F220231D63EC0097CC1C /* GHFilenameUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHFilenameUtil.h; path = ../../../GHFilenameUtil.h; sourceTree = "<group>"; };
-		95F0F221231D63ED0097CC1C /* GHEnumInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHEnumInclude.h; path = ../../../GHEnumInclude.h; sourceTree = "<group>"; };
-		95F0F222231D63ED0097CC1C /* GHString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHString.h; path = ../../../GHString.h; sourceTree = "<group>"; };
-		95F0F223231D63ED0097CC1C /* GHFilenameUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GHFilenameUtil.cpp; path = ../../../GHFilenameUtil.cpp; sourceTree = "<group>"; };
-		95F0F224231D63ED0097CC1C /* GHWhitespaceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHWhitespaceUtil.h; path = ../../../GHWhitespaceUtil.h; sourceTree = "<group>"; };
-		95F0F225231D63ED0097CC1C /* GHStringIdFactoryDJB2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHStringIdFactoryDJB2.h; path = ../../../GHStringIdFactoryDJB2.h; sourceTree = "<group>"; };
-		95F0F226231D63ED0097CC1C /* GHCharLess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHCharLess.h; path = ../../../GHCharLess.h; sourceTree = "<group>"; };
-		95F0F227231D63ED0097CC1C /* GHIdentifierMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHIdentifierMap.h; path = ../../../GHIdentifierMap.h; sourceTree = "<group>"; };
-		95F0F228231D63ED0097CC1C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = ../../../LICENSE.txt; sourceTree = "<group>"; };
-		95F0F229231D63ED0097CC1C /* GHStringIdFactoryDJB2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GHStringIdFactoryDJB2.cpp; path = ../../../GHStringIdFactoryDJB2.cpp; sourceTree = "<group>"; };
-		95F0F22A231D63ED0097CC1C /* GHHashListParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GHHashListParser.cpp; path = ../../../GHHashListParser.cpp; sourceTree = "<group>"; };
-		95F0F22B231D63ED0097CC1C /* GHString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GHString.cpp; path = ../../../GHString.cpp; sourceTree = "<group>"; };
-		95F0F22C231D63ED0097CC1C /* GHEnumEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GHEnumEnd.h; path = ../../../GHEnumEnd.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,31 +83,30 @@
 		95F0F20C231D63990097CC1C /* GHString */ = {
 			isa = PBXGroup;
 			children = (
-				95F0F226231D63ED0097CC1C /* GHCharLess.h */,
-				95F0F21B231D63EC0097CC1C /* GHEnum.h */,
-				95F0F22C231D63ED0097CC1C /* GHEnumEnd.h */,
-				95F0F221231D63ED0097CC1C /* GHEnumInclude.h */,
-				95F0F223231D63ED0097CC1C /* GHFilenameUtil.cpp */,
-				95F0F220231D63EC0097CC1C /* GHFilenameUtil.h */,
-				95F0F22A231D63ED0097CC1C /* GHHashListParser.cpp */,
-				95F0F218231D63EC0097CC1C /* GHHashListParser.h */,
-				95F0F216231D63EC0097CC1C /* GHIdentifier.h */,
-				95F0F227231D63ED0097CC1C /* GHIdentifierMap.h */,
-				95F0F217231D63EC0097CC1C /* GHNumberListParser.cpp */,
-				95F0F21A231D63EC0097CC1C /* GHNumberListParser.h */,
-				95F0F22B231D63ED0097CC1C /* GHString.cpp */,
-				95F0F222231D63ED0097CC1C /* GHString.h */,
-				95F0F21F231D63EC0097CC1C /* GHStringIdFactory.h */,
-				95F0F229231D63ED0097CC1C /* GHStringIdFactoryDJB2.cpp */,
-				95F0F225231D63ED0097CC1C /* GHStringIdFactoryDJB2.h */,
-				95F0F21C231D63EC0097CC1C /* GHStringTokenizer.cpp */,
-				95F0F21D231D63EC0097CC1C /* GHStringTokenizer.h */,
-				95F0F21E231D63EC0097CC1C /* GHWhitespaceUtil.cpp */,
-				95F0F224231D63ED0097CC1C /* GHWhitespaceUtil.h */,
-				95F0F228231D63ED0097CC1C /* LICENSE.txt */,
-				95F0F219231D63EC0097CC1C /* README.md */,
+				0ADC7F92255DB2F800F6F683 /* GHCharLess.h */,
+				0ADC7FA1255DB2F800F6F683 /* GHEnum.h */,
+				0ADC7F93255DB2F800F6F683 /* GHEnumEnd.h */,
+				0ADC7F9F255DB2F800F6F683 /* GHEnumInclude.h */,
+				0ADC7F96255DB2F800F6F683 /* GHFilenameUtil.cpp */,
+				0ADC7F9B255DB2F800F6F683 /* GHFilenameUtil.h */,
+				0ADC7F97255DB2F800F6F683 /* GHHashListParser.cpp */,
+				0ADC7F9D255DB2F800F6F683 /* GHHashListParser.h */,
+				0ADC7F9A255DB2F800F6F683 /* GHIdentifier.h */,
+				0ADC7FA4255DB2F800F6F683 /* GHIdentifierMap.h */,
+				0ADC7FA6255DB2F900F6F683 /* GHNumberListParser.cpp */,
+				0ADC7FA0255DB2F800F6F683 /* GHNumberListParser.h */,
+				0ADC7FA5255DB2F800F6F683 /* GHString.cpp */,
+				0ADC7F94255DB2F800F6F683 /* GHString.h */,
+				0ADC7F98255DB2F800F6F683 /* GHStringIdFactory.h */,
+				0ADC7FA2255DB2F800F6F683 /* GHStringIdFactoryDJB2.cpp */,
+				0ADC7F99255DB2F800F6F683 /* GHStringIdFactoryDJB2.h */,
+				0ADC7F9E255DB2F800F6F683 /* GHStringTokenizer.cpp */,
+				0ADC7FA3255DB2F800F6F683 /* GHStringTokenizer.h */,
+				0ADC7F9C255DB2F800F6F683 /* GHWhitespaceUtil.cpp */,
+				0ADC7F95255DB2F800F6F683 /* GHWhitespaceUtil.h */,
 			);
-			path = GHString;
+			name = GHString;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,13 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95F0F22F231D63ED0097CC1C /* GHWhitespaceUtil.cpp in Sources */,
-				95F0F230231D63ED0097CC1C /* GHFilenameUtil.cpp in Sources */,
-				95F0F22D231D63ED0097CC1C /* GHNumberListParser.cpp in Sources */,
-				95F0F233231D63EE0097CC1C /* GHString.cpp in Sources */,
-				95F0F232231D63EE0097CC1C /* GHHashListParser.cpp in Sources */,
-				95F0F231231D63ED0097CC1C /* GHStringIdFactoryDJB2.cpp in Sources */,
-				95F0F22E231D63ED0097CC1C /* GHStringTokenizer.cpp in Sources */,
+				0ADC7FA9255DB2F900F6F683 /* GHWhitespaceUtil.cpp in Sources */,
+				0ADC7FA7255DB2F900F6F683 /* GHFilenameUtil.cpp in Sources */,
+				0ADC7FA8255DB2F900F6F683 /* GHHashListParser.cpp in Sources */,
+				0ADC7FAB255DB2F900F6F683 /* GHStringIdFactoryDJB2.cpp in Sources */,
+				0ADC7FAA255DB2F900F6F683 /* GHStringTokenizer.cpp in Sources */,
+				0ADC7FAD255DB2F900F6F683 /* GHNumberListParser.cpp in Sources */,
+				0ADC7FAC255DB2F900F6F683 /* GHString.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
