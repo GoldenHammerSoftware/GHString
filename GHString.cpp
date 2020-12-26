@@ -48,6 +48,7 @@ const char* GHString::getChars(void) const
 
 char* GHString::getNonConstChars(void)
 {
+	transitionToWriteable();
     return mChars;
 }
 
@@ -192,4 +193,53 @@ void GHString::truncateChars(const char* chars, size_t maxLen)
 		truncStr[maxLen - 3] = '.';
 	}
 	setChars(truncStr, GHString::CHT_CLAIM);
+}
+
+bool GHString::replace(const char* src, const char* dst)
+{
+	transitionToWriteable();
+	char* start = strstr(mChars, src);
+	if (!start)
+	{
+		return false;
+	}
+	size_t srcLen = strlen(src);
+	size_t dstLen = strlen(dst);
+	// This is going to be really inefficient if dstLen > srcLen.  Need to reserve in advance if this is common.
+	if (dstLen > srcLen)
+	{
+		mCharLen = mCharLen + (dstLen - srcLen);
+		char* newChars = new char[mCharLen];
+		sprintf(newChars, "%s", mChars);
+		// can assume we own chars because of transitionToWriteable.
+		delete[] mChars;
+		mChars = newChars;
+	}
+
+	char* rebuf = start + srcLen;
+	*start = '\0';
+	sprintf(mChars, "%s%s%s\0", mChars, dst, rebuf);
+	mCharLen = strlen(mChars);
+	return true;
+}
+
+bool GHString::replaceAll(const char* src, const char* dst)
+{
+	bool ret = false;
+	while (replace(src, dst)) {}
+	return ret;
+}
+
+void GHString::transitionToWriteable(void)
+{
+	if (!mConstChars)
+	{
+		// already writeable.
+		return;
+	}
+	mChars = new char[mCharLen + 1];
+	sprintf(mChars, mConstChars, mCharLen);
+	mChars[mCharLen] = '\0';
+	mOwnsChars = true;
+	mConstChars = 0;
 }

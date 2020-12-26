@@ -39,7 +39,10 @@ public:
 	size_t getCharLen(void) const { if (!mChars && !mConstChars) return 0; return mCharLen; }
     // return true if string is 0 or ""
     bool isEmpty(void) const;
-    
+
+	bool replace(const char* src, const char* dst);
+    bool replaceAll(const char* src, const char* dst);
+
     operator const char*(void) const { return getChars(); }
 	bool operator < (const GHString& other) const;
 	bool operator ==(const GHString& other) const;
@@ -51,6 +54,7 @@ public:
 
 private:
 	void clearNonConstChars(void);
+	void transitionToWriteable(void);
 
 private:
 	/// A string is expected to have either const chars or chars but not both.
