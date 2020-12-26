@@ -40,8 +40,9 @@ public:
     // return true if string is 0 or ""
     bool isEmpty(void) const;
 
-	bool replace(const char* src, const char* dst);
-    bool replaceAll(const char* src, const char* dst);
+	// return the location after our replacement, or 0 if not found.
+	char* replace(const char* oldStr, const char* newStr, char* searchStart);
+    bool replaceAll(const char* oldStr, const char* newStr);
 
     operator const char*(void) const { return getChars(); }
 	bool operator < (const GHString& other) const;

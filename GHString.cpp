@@ -195,39 +195,51 @@ void GHString::truncateChars(const char* chars, size_t maxLen)
 	setChars(truncStr, GHString::CHT_CLAIM);
 }
 
-bool GHString::replace(const char* src, const char* dst)
+char* GHString::replace(const char* src, const char* dst, char* searchStart)
 {
 	transitionToWriteable();
-	char* start = strstr(mChars, src);
+	char* start = strstr(searchStart, src);
 	if (!start)
 	{
-		return false;
+		return 0;
 	}
+
 	size_t srcLen = strlen(src);
 	size_t dstLen = strlen(dst);
 	// This is going to be really inefficient if dstLen > srcLen.  Need to reserve in advance if this is common.
+	char* outputChars = mChars;
 	if (dstLen > srcLen)
 	{
-		mCharLen = mCharLen + (dstLen - srcLen);
-		char* newChars = new char[mCharLen];
-		sprintf(newChars, "%s", mChars);
-		// can assume we own chars because of transitionToWriteable.
-		delete[] mChars;
-		mChars = newChars;
+		mCharLen = mCharLen + (dstLen-srcLen);
+		char* newChars = new char[mCharLen+1];
+		outputChars = newChars;
 	}
 
 	char* rebuf = start + srcLen;
+	size_t rebufOffset = (rebuf - mChars);
+	char* ret = outputChars + rebufOffset;
 	*start = '\0';
-	sprintf(mChars, "%s%s%s\0", mChars, dst, rebuf);
+	sprintf(outputChars, "%s%s%s", mChars, dst, rebuf);
+	if (outputChars != mChars)
+	{
+		// can assume we own chars because of transitionToWriteable.
+		delete[] mChars;
+		mChars = outputChars;
+	}
 	mCharLen = strlen(mChars);
-	return true;
+	return ret;
 }
 
 bool GHString::replaceAll(const char* src, const char* dst)
 {
-	bool ret = false;
-	while (replace(src, dst)) {}
-	return ret;
+	char* nextSearch = mChars;
+	bool replaced = false;
+	while (nextSearch != 0) 
+	{
+		nextSearch = replace(src, dst, nextSearch);
+		replaced = true;
+	}
+	return replaced;
 }
 
 void GHString::transitionToWriteable(void)
